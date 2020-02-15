@@ -6,6 +6,10 @@
         "framework",
         "laravel"
     ],
+     "post-install-cmd": [
+     "php artisan clear-compiled",
+     "chmod -R 777 public/"
+ ],
     "license": "MIT",
     "require": {
         "php": "^7.1.3",
@@ -21,6 +25,9 @@
         "nesbot/carbon": "2.29.1 as 1.39.0",
         "kylekatarnls/laravel-carbon-2": "^1.0.0"
     },
+    
+       
+    
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
         "filp/whoops": "^2.0",
